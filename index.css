@@ -14,6 +14,7 @@ body {
 	justify-content: center;
 
 	cursor: default;
+	margin: 0;
 
 }
 
@@ -95,4 +96,25 @@ i {
 ::selection {
 	color: inherit /* var(--bore) */;
 	background: var(--bore);
+}
+
+@media only screen and (max-width: 900px) {
+	body {
+		margin: 24px;
+	}
+	#text {
+		margin: 0;
+	}
+}
+
+@media only screen and (max-width: 600px) {
+	#text {
+		padding: 52px 64px;
+	}
+}
+
+@media only screen and (max-width: 450px) {
+	#text {
+		padding: 46px;
+	}
 }
