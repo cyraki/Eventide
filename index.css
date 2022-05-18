@@ -6,47 +6,55 @@ body {
 	--bore: #313943;
 	--accent: #ff82b2;
 
+	--warn: #afa543;
+	--wrnbg: #dacc4d0e;
+
 	background-color: var(--bg-a);
 	font-family: "Segoe UI", Arial, sans-serif;
 	color: #cdd3da;
-
-	display: flex;
-	justify-content: center;
 
 	cursor: default;
 	margin: 0;
 
 }
 
-#text {
+.text {
 	border: solid 2px var(--bord);
 	background-color: var(--bg-b);
 	width: 720px;
-	margin: 40px 0;
+	margin: 40px auto;
 	padding: 64px 72px;
 	border-radius: 4px;
 }
 
-#song {
-	position: fixed;
-	bottom: 16px; right: 16px;
+.warn {
+	border-left: solid 4px var(--warn);
+	background-color: var(--wrnbg);
+	width: 720px;
+	margin: 40px auto;
+	padding: 46px 72px 36px 72px;
+}
+.warn p { text-indent: 0 }
+
+.song {
+	float: right;
 	border-radius: 100%;
-	background-color: var(--bg-a);
 	border: solid 2px var(--bord);
 	padding: 8px;
 	cursor: pointer;
 	user-select: none;
 	transition: 0.1s;
 }
-#song:hover, #song:active {
+.song:hover, .song:active {
 	border-color: var(--bore);
 	box-shadow: #0000001a 0 4px 16px;
 }
-#song:active {
+.song:active {
 	transform: scale(0.92);
+	background-color: var(--bg-a);
 }
 
-#song #note {
+.song .note {
 	width: 42px;
 	height: 42px;
 	font-size: 32px;
@@ -74,6 +82,31 @@ p {
 }
 i {
 	color: var(--accent);
+}
+divider {
+	display: block;
+	height: 0;
+	margin: 3em 1em;
+	border-bottom: 2px solid var(--bord);
+}
+
+longword {
+	word-wrap: break-word;
+	word-break: break-all;
+}
+
+.quote {
+	text-indent: 0;
+	margin: 2em .5em;
+}
+.quote i {
+	color: #3eb4bf;
+	display: block;
+	margin-bottom: 4px;
+}
+.quote i::before {
+	content: '> ';
+	color: #485361;
 }
 
 .tiptext {
