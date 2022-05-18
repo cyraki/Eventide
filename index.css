@@ -36,6 +36,19 @@ body {
 }
 .warn p { text-indent: 0 }
 
+.upcoming {
+	background-color: #e5e5f7;
+	opacity: 0.8;
+	background: repeating-linear-gradient( -45deg, #3eb4bf38, #3eb4bf38 2px, var(--bg-b) 2px, var(--bg-b) 20px );
+}
+.upcoming h1 {
+	color: #e6e9ed;
+	margin-bottom: 0;
+}
+.upcoming d {
+	color: var(--accent);
+}
+
 .song {
 	float: right;
 	border-radius: 100%;
@@ -132,22 +145,5 @@ longword {
 }
 
 @media only screen and (max-width: 900px) {
-	body {
-		margin: 24px;
-	}
-	#text {
-		margin: 0;
-	}
-}
 
-@media only screen and (max-width: 600px) {
-	#text {
-		padding: 52px 64px;
-	}
-}
-
-@media only screen and (max-width: 450px) {
-	#text {
-		padding: 46px;
-	}
 }
