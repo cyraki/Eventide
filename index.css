@@ -90,7 +90,7 @@ h1 {
 p {
 	font-size: 20px;
 	text-align: justify;
-	text-indent: 1.2em;
+	text-indent: 1.6em;
 	margin: 1em 0;
 }
 i {
@@ -145,5 +145,53 @@ longword {
 }
 
 @media only screen and (max-width: 900px) {
+	h1 {
+		font-size: 30px;
+		margin-bottom: 24px;
+	}
+	p {
+		font-size: 20px;
+		text-align: left;
+	}
 
+	.text, .warn {
+		width: auto;
+		margin: 20px;
+		padding: 42px;
+	}
+	.song .note {
+		font-size: 24px;
+	}
+}
+
+@media only screen and (max-width: 400px) {
+	h1 {
+		font-size: 26px;
+	}
+	p {
+		font-size: 18px;
+		text-indent: .6em;
+	}
+
+	.text, .warn {
+		margin: 16px 12px;
+		padding: 36px;
+	}
+	.song {
+		border-color: var(--bore);
+	}
+	.song .note {
+		width: 24px;
+		height: 24px;
+		font-size: 20px;
+	}
+
+	#copy {
+		background-color: var(--bord);
+		border: solid 2px var(--bore);
+		padding: 4px;
+		border-radius: 4px;
+		opacity: 1;
+		left: unset; right: 8px;
+	}
 }
